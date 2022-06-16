@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.chat_body{
+   display: flex;
+   /* border: 1px solid red; */
+   margin: 20px;
+   padding: 10px;
+   box-sizing: border-box;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    height: 90vh;
+}
+.user_list{
+    /* border: 1px solid red; */
+    width: 40%;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.user_list h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    color: rgb(121, 76, 163);
+    padding: 5px 0px;
+    
+}
+.user{
+    /* border: 1px solid red; */
+    height: 70vh;
+    overflow: scroll;
+    padding-right: 5px;
+}
+.user_box{
+    display: flex;
+    background-color: darkblue;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(66, 55, 55);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: .3s; 
+
+  
+}
+.activ{
+    color: rgb(7, 7, 97);
+    border: 1px solid rgb(7, 7, 97);
+    background-color: transparent;
+}
+.activ:hover{
+    background-color: rgb(7, 7, 97);
+}
+
+.user_box:hover{
+    background-color: rgb(7, 7, 97);
+}
+.user_box img{ 
+    overflow: hidden;
+}
+.user_box img{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+}
+.description{
+    padding-left: 10px;
+}
+.description h3{
+    font-size: 14px;
+    margin: 0;
+}
+.description p{
+    font-size: 10px;
+    margin: 0;
+}
+
+.message_list{
+    /* border: 1px solid red; */
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.message_list_group{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    padding: 10px;
+    height: 80vh;
+    overflow-y: scroll;
+}
+.single_message{
+    background-color: darkblue;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(66, 55, 55);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: .3s;
+    width: 80%;
+}
+.right{
+    align-self: flex-end;
+    text-align: right;
+}
+.single_message:hover{
+    background-color: rgb(7, 7, 97);
+}
+.single_message .text{
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.single_message .time{
+    font-size: 11px;
+    margin: 0;
+    color: rgb(194, 18, 121);
+}
+
+.text_submit_box{
+    /* border: 1px solid red; */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+}
+.text_submit_box form{
+    display: flex;
+    justify-content: space-between;
+}
+.text_submit_box form input{
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+    border: 0;
+}
+.text_submit_box form button{
+    background-color: darkblue;
+    color: white;
+    border: 1px solid rgb(230, 7, 7) ;
+    border-radius: 5px;
+    margin-left: 5px;
+    /* width: 40px;
+    height: 40px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #dbcdcd;
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: darkblue;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(7, 7, 97);
+  }
